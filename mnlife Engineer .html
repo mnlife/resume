@@ -1,0 +1,813 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="alternate" media="handheld" href="#" />
+    <meta charset="utf-8">
+    <title>mnlife的简历</title>
+    <style>
+        * {
+            outline: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            font-family: "Hiragino Sans GB", "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+            color: #333;
+            word-wrap: break-word;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block;
+        }
+
+        progress {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+
+        a {
+            color: #555;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00b38a;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p+p {
+            margin-top: 10px;
+        }
+
+        img {
+            border: 0;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #ededed;
+            border-radius: 0;
+            font-family: "Hiragino Sans GB", "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        label,
+        select,
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        input[type="radio"],
+        input[type="checkbox"],
+        input[type="file"] {
+            cursor: pointer;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            font-family: "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th,
+        td {
+            padding: 0;
+        }
+
+        strong {
+            font-weight: normal;
+        }
+
+        em,
+        i {
+            font-style: normal;
+        }
+
+        dl,
+        dt,
+        dd {
+            margin: 0;
+        }
+
+        ::selection {
+            color: #fff;
+            background-color: #00b38a;
+        }
+
+        ::-moz-selection {
+            color: #fff;
+            background-color: #00b38a;
+        }
+
+        ul,
+        ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #container {
+            width: 720px;
+            margin: 50px auto 54px auto;
+            border: 1px solid #e3ebe9;
+            border-radius: 5px;
+        }
+
+        .mr-template {
+            padding: 50px 50px 10px;
+        }
+
+        .mr-template .mr-template_title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .mr-template .mr-template_title span {
+            font-size: 18px;
+            color: #333333;
+            font-weight: 600;
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .mr-template .mr-template_title span:before {
+            content: '';
+            display: block;
+            border-left: 3px solid #00B38A;
+            height: 16px;
+            width: 3px;
+            position: absolute;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .mr-template .mr_md_del {
+            display: none;
+        }
+
+        /***** 基本信息 ****/
+
+        .basic {
+            padding: 50px;
+            background: #FAFAFA;
+            border-radius: 5px 5px 0 0;
+            border-bottom: 1px solid #E3EBE9;
+            display: flex;
+        }
+
+        .basic .basic-photo {
+            height: 88px;
+            width: 88px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .basic .basic-photo img {
+            height: 88px;
+            width: 88px;
+            position: absolute;
+            top: 0;
+            border-radius: 50%;
+        }
+
+        .basic .basic-photo .basic-photo_shadow {
+            display: none;
+        }
+
+        .basic .basic-photo:hover .basic-photo_shadow {
+            display: block;
+        }
+
+        .basic .basic-info {
+            position: relative;
+            width: 100%;
+            margin-left: 20px;
+            flex: 1;
+        }
+
+        .basic .basic-info .edit-btn {
+            position: absolute;
+            right: 0;
+            top: 4px;
+        }
+
+        .basic .basic-info .basic-name-area {
+            overflow: hidden;
+            height: 37px;
+            margin-bottom: 11px;
+        }
+
+        .basic .basic-info .basic-name {
+            float: left;
+            max-width: 250px;
+            font-size: 26px;
+            color: #333333;
+            font-weight: 600;
+            line-height: 37px;
+        }
+
+        .basic .basic-info .icon-sex {
+            width: 13px;
+            height: 13px;
+            float: left;
+            margin-top: 16px;
+            margin-left: 10px;
+            background: none;
+        }
+
+        .basic .basic-info .icon-sex.icon-sex__male {
+            background: url(https://www.lgstatic.com/common/image/pc/icon_man.png);
+        }
+
+        .basic .basic-info .icon-sex.icon-sex__female {
+            background: url(https://www.lgstatic.com/common/image/pc/icon_woman.png);
+        }
+
+        .basic .basic-info .basic-self {
+            margin-top: 20px;
+        }
+
+        .basic .basic-info p {
+            font-size: 14px;
+            color: #333333;
+            line-height: 20px;
+            margin-top: 6px;
+        }
+
+        .basic .basic-info i {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .basic .basic-info .basic-tel_icon {
+            width: 11px;
+            height: 14px;
+            margin-right: 2px;
+            background: url(https://www.lgstatic.com/common/image/pc/icon_phone.png);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .basic .basic-info .basic-email_icon {
+            width: 14px;
+            height: 11px;
+            margin-right: 2px;
+            background: url(https://www.lgstatic.com/common/image/pc/icon_mail.png);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .basic .basic-info .basic-tel {
+            margin-right: 20px;
+        }
+
+        .basic-tel span {
+            vertical-align: middle;
+        }
+
+        .basic-email span {
+            vertical-align: middle;
+        }
+
+        /***** 基本信息 end ****/
+
+        /***** 自我描述 ****/
+
+        .per .per-self_content {
+            position: relative;
+        }
+
+        .per .per-self_content .per-self_des {
+            margin-top: 13px;
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .per .per-self_content .per-self_des p {
+            margin-top: 0;
+        }
+
+        .per .per-self_content .per-self_des ol {
+            list-style-type: decimal;
+            -webkit-padding-start: 20px;
+        }
+        .per .per-self_content .per-self_des ul {
+            list-style: disc;
+            -webkit-padding-start: 20px;
+        }
+
+        /***** 自我描述 end ****/
+
+        /***** 工作经历 ****/
+
+        .work-exp .work-exp_list {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .work-exp .work-exp_list .exp-list_time {
+            font-size: 14px;
+            color: #666666;
+            position: absolute;
+            right: 0;
+        }
+
+        .work-exp .work-exp_list .exp-list_top {
+            display: flex;
+            align-items: center;
+        }
+
+        .work-exp .work-exp_list .exp-list_top img {
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+        }
+
+        .work-exp .work-exp_list .exp-list_top .exp-list_right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 46px;
+            justify-content: space-between;
+        }
+
+        .work-exp .work-exp_list .exp-list_top .exp-list_right p,
+        .work-exp .work-exp_list .exp-list_top .exp-list_right strong {
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .work-exp .work-exp_list .exp-list_top .exp-list_right strong {
+            font-weight: 600;
+        }
+
+        .work-exp .work-exp_list .tagboard {
+            margin: 20px 0 10px;
+        }
+
+        .work-exp .work-exp_list .exp-list_content {
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+        }
+
+        .tagboard .tagboard-tag {
+            font-size: 12px;
+            color: #999;
+            line-height: 18px;
+            padding: 3px 10px;
+            border: 1px solid #EAEDEC;
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+
+        .work-exp .work-exp_list .exp-list_content ul, .work-exp .work-exp_list .exp-list_content_highlight ul {
+            list-style: disc;
+            -webkit-padding-start: 20px;
+        }
+
+        .work-exp .work-exp_list .exp-list_content ol, .work-exp .work-exp_list .exp-list_content_highlight ol {
+            list-style-type: decimal;
+            -webkit-padding-start: 20px;
+        }
+        /***** 工作经历 end ****/
+
+        /***** 项目经历 ****/
+
+        .pro-exp .pro-exp_list {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_title {
+            font-size: 14px;
+            color: #333333;
+            font-weight: 600;
+            cursor: default;
+            display: flex;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_title .exp-project_name, .pro-exp .pro-exp_list .exp-list_title .exp-project_company span {
+            max-width: 222px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_title .exp-project_company {
+            display: flex;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_time {
+            font-size: 14px;
+            color: #666666;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_content,
+        .pro-exp .pro-exp_list .exp-project_des {
+            font-size: 14px;
+            color: #666666;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+
+        .pro-exp .exp-list_title.active:hover {
+            color: #00B38A;
+            cursor: pointer;
+        }
+        .pro-exp .exp-project_url {
+            font-size: 14px;
+            color: #666;
+            line-height: 30px;
+        }
+        .pro-exp .pro-exp_list .exp-list_content ul, .pro-exp .pro-exp_list .exp-project_des ul {
+            list-style: disc;
+            -webkit-padding-start: 20px;
+        }
+
+        .pro-exp .pro-exp_list .exp-list_content ol,.pro-exp .pro-exp_list .exp-project_des ol{
+            list-style-type:decimal;-webkit-padding-start:20px
+        }
+
+        /***** 项目经历 end ****/
+
+        /***** 教育经历 ****/
+
+        .edu-exp .edu-exp_list {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_time {
+            font-size: 14px;
+            color: #666666;
+            position: absolute;
+            right: 0;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top {
+            display: flex;
+            align-items: center;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top img {
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 46px;
+            justify-content: space-between;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right p,
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right strong {
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .edu-exp .edu-exp_list .exp-list_top .exp-list_right strong {
+            font-weight: 600;
+        }
+
+
+        /***** 教育经历 end ****/
+
+        /***** 社交主页 ****/
+
+        .social-page .social-page_list {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .social-page .social-page_list .social-page_content {
+            display: flex;
+        }
+
+        .social-page .social-page_list .social-page_content img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .social-page .social-page_list .social-page_content p {
+            font-size: 14px;
+            color: #666666;
+        }
+
+
+        /***** 社交主页 end ****/
+                /***** 图片作品 ****/
+
+        .portfolio-page .portfolio-list{
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .portfolio-page .portfolio-list .portfolio-content{
+            font-size: 14px;
+            color: #666666;
+        }
+
+
+        /***** 图片作品 end ****/
+    </style>
+</head>
+
+    <body>
+        <div id="container">
+            <!-- 基本信息 -->
+            <div class="basic" id="baseInfo">
+                <div class="basic-photo">
+                    <img class="mr_headimg user-avatar" id="userpic" src="https://www.lgstatic.com/i/image3/M00/4E/A4/CgpOIFruZWKAKqvcAAA9LPRnLJk182.jpg" width="120" height="120" alt="头像"
+                    />
+                </div>
+                <div class="basic-info">
+                    <div class="basic-name-area">
+                        <p class="basic-name female">mnlife</p>
+                            <i class="icon-sex icon-sex__male"></i>
+                    </div>
+                                <p>
+                                    <span class="basic-company">深圳迈格瑞能技术有限公司</span>
+                                    <span> / </span>
+                                    <span class="basic-job">嵌入式软件开发(Linux|单片机|DLC|DSP…)</span>
+                                </p>
+                            <p class="basic-self">
+                                    <span class="basic-exp">3年工作经验 / </span>
+                                    <span class="basic-edu">本科
+                                         / 
+                                    </span>
+                                    <span class="basic-age">24岁</span>
+                            </p>
+                    <p>
+                            <span class="basic-tel">
+                                <i class="basic-tel_icon"></i>
+                                <span>17603028377</span>
+                            </span>
+                            <span class="basic-email">
+                                <i class="basic-email_icon"></i>
+                                <span>mnlife.qiao@gmail.com</span>
+                            </span>
+                    </p>
+                </div>
+            </div>
+            <!-- /基本信息 -->
+
+            <!-- 自我描述 -->
+            <div class="mr-template per" id="perAbility">
+                <div class="mr-template_title">
+                    <span>自我描述</span>
+                </div>
+                <div class="tagboard integrative-tag">
+                    <div class="integrative-tag_content">
+                                <span class="tagboard-tag">个人能力</span>
+                                <span class="tagboard-tag">执行力</span>
+                                <span class="tagboard-tag">自驱动</span>
+                                <span class="tagboard-tag">抗压能力</span>
+                                <span class="tagboard-tag">时间管理</span>
+                    </div>
+                </div>
+                <div class="per-self_content">
+                        <div class="per-self_des">
+                            <ul>
+ <li><p>掌握C, C++, Python, 并使用其进行基于linux, windows的软件开发,能够使用VC进行基于windows的简单软件开发;<br /></p></li>
+ <li><p>熟练使用stm32平台进行软件开发，曾使用其进行u-boot的移植;</p></li>
+ <li><p>熟练使用TI C2000系列MCU进行软件开发;</p></li>
+ <li><p>掌握Embedded OS的原理，对其任务调度，时间管理，线程间通信有深刻的认识. 尤其是UCOS-II实时操作系统，对于其底层实现，上层应用对其调用方式有深入的了解；</p></li>
+ <li><p>对于CAN通讯,串口通讯有过多次实战经验,并从硬件及软件层面对其通讯机制都有深刻的理解;</p></li>
+ <li><p>有硬件方面开发经验, 熟悉电力电子行业的产品开发;<br /></p></li>
+ <li><p>有控制软件开发经验,会使用simulink进行控制算法的仿真;<br /></p></li>
+  <li><p>会使用常用的深度学习框架,如tensorflow, keras, caffe。曾在Amazon的AWS的云主机上进行kaggle的竞赛；</p></li>
+ <li><p>对于自动驾驶的硬件及软件模块有初步的认识,基于自动驾驶的入门书籍《第一本无人驾驶技术书》, 及百度的开源软件apollo等等;</p></li>
+</ul>
+                        </div>
+                </div>
+            </div>
+            <!-- /自我描述 -->
+
+
+            <!-- 工作经历 -->
+                <div class="mr-template work-exp" id="workExp">
+                    <div class="mr-template_title">
+                        <span>工作经历</span>
+                    </div>
+                    <ol class="work-exp_group">
+                            <li class="work-exp_list">
+                                <p class="exp-list_time">2018.06-至今</p>
+                                <div class="exp-list_top">
+                                    <img src="https://www.lgstatic.com/images/logo_default.png" alt="公司Logo">
+                                    <div class="exp-list_right">
+                                        <strong class="exp-list_title">
+                                            <span>深圳迈格瑞能技术有限公司</span>
+                                                                                    </strong>
+                                        <p>嵌入式软件开发(Linux|单片机|DLC|DSP…)</p>
+                                    </div>
+                                </div>
+                                <div class="tagboard">
+                                        <span class="tagboard-tag">Keil</span>
+                                        <span class="tagboard-tag">gcc</span>
+                                        <span class="tagboard-tag">git</span>
+                                        <span class="tagboard-tag">Embedded OS</span>
+                                        <span class="tagboard-tag">C/C++</span>
+                                        <span class="tagboard-tag">ASM</span>
+                                        <span class="tagboard-tag">Python</span>
+                                </div>
+                                <div class="exp-list_content">
+                                    <ul> 
+ <li><p>负责5kW户用储能部分硬件的开发；</p></li> 
+ <li><p>负责监控软件的开发，基于stm32平台,使用ucos real-time os；<br /></p></li> 
+ <li><p>公司的物料打样前需要进行库存查询，这一过程手工完成非常麻烦；改进后使用pandas从excel录入待查询物料，selenium完成库存的自动化查询，进行数据的处理，并打上相应的标签后，将数据存入excel；通过使用selenium-Web Browser Automation 自动化测试软件，大大提高了效率；并且也将其成功应用在BOM的管理及录入，物料的申请上面；</p></li>
+</ul>
+                                </div>
+                            </li>
+                            <li class="work-exp_list">
+                                <p class="exp-list_time">2016.05-2018.06</p>
+                                <div class="exp-list_top">
+                                    <img src="https://www.lgstatic.com/image2/M00/08/59/CgqLKVYCVFqAKmxXAANCPeIjVO0266.png?cc=0.9910173243843019" alt="公司Logo">
+                                    <div class="exp-list_right">
+                                        <strong class="exp-list_title">
+                                            <span>科士达</span>
+                                                                                    </strong>
+                                        <p>嵌入式软件开发(Linux|单片机|DLC|DSP…)</p>
+                                    </div>
+                                </div>
+                                <div class="tagboard">
+                                        <span class="tagboard-tag">SCI</span>
+                                        <span class="tagboard-tag">SPI</span>
+                                        <span class="tagboard-tag">CAN</span>
+                                        <span class="tagboard-tag">I2C</span>
+                                        <span class="tagboard-tag">Embedded OS</span>
+                                        <span class="tagboard-tag">C/C++</span>
+                                        <span class="tagboard-tag">Python</span>
+                                </div>
+                                <div class="exp-list_content">
+                                    <ul> 
+ <li><p>项目初期在项目组内负责50K模块UPS的部分硬件开发,在这之中,独立负责其中部分原理图的绘制,使用saber进行硬件电路的仿真,协助layout工程师进行PCB绘制, 之后先进行单板调试,调试结束后进行整机测试,经过近一年努力,产品终测完闭,已有小规模量产,并在市场上反馈良好;</p></li> 
+ <li><p>从2017年开始独立负责逆变软件的维护, 能够使用matlab之中的simulink进行控制方面的仿真.</p><p>从2017年11月起进行控制软件(使用CCSV7)方面的移植工作,与另一个负责整流软件的同事,一起合作从现有平台TI C2000的2808,移植到28377D,至今移植工作已初步完成,正在测试阶段;</p><p>在之中,对于TI C2000系列的MCU有了深入的了解,对于CAN,SPI, SCI, I2C,共享内存等通讯方式也有了更为深刻的认识.</p></li> 
+ <li><p>独立完成了一个上位机软件的编写(使用VS2017),实现整流逆变旁路软件的多模块在线升级,最多支持16个模块,底层的通讯通过CAN总线实现;并且实现了BootLoader功能,也就是在DSP内部没有程序的情况下,也可以实现在线升级;</p><p>通过使用CAN进行多模块在线升级,之后进行SCI, SPI, I2C, USB升级也不是什么问题;<br /></p></li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;在这个过程中,对CAN总线的通讯机制,从硬件至软件层面都有了较为深刻的理解.</p>
+<ul> 
+ <li><p>对于嵌入式操作系统有基本的的了解，有嵌入式程序的开发经验；并且曾将由MakeFile编译的应用程序（基于ARM9的嵌入式操作系统）改写为CMake，大大增加了程序的可读性；<br /></p></li>
+</ul>
+                                </div>
+                            </li>
+                            <li class="work-exp_list">
+                                <p class="exp-list_time">2015.09-2016.05</p>
+                                <div class="exp-list_top">
+                                    <img src="https://www.lgstatic.com/images/logo_default.png" alt="公司Logo">
+                                    <div class="exp-list_right">
+                                        <strong class="exp-list_title">
+                                            <span>广东玛西尔电动科技有限公司</span>
+                                                                                    </strong>
+                                        <p>汽车电子工程师</p>
+                                    </div>
+                                </div>
+                                <div class="tagboard">
+                                        <span class="tagboard-tag">saber，simulink</span>
+                                        <span class="tagboard-tag">硬件</span>
+                                </div>
+                                <div class="exp-list_content">
+                                    <p>2015年年底进行了一款40W小功率电源的设计，经过不断的优化设计，解决了其中存在的各种BUG，并且将其效率从70%优化到了峰值效率达到89%；现在正在进行一款带PFC的300W双管正激的设计中，已初步调试完成，半载效率可达90%，满载效率89%。</p>
+                                </div>
+                            </li>
+                    </ol>
+                </div>
+            <!-- /工作经历 -->
+
+            <!-- 项目经历 -->
+                <div class="mr-template pro-exp" id="proExp">
+                    <div class="mr-template_title">
+                        <span>项目经历</span>
+                    </div>
+                    <ol class="pro-exp_group">
+                            <li class="pro-exp_list">
+                                <p class="exp-list_title">
+                                    <span class="exp-project_name">Dogs vs. Cats kaggle竞赛</span>
+                                </p>
+                                <p class="exp-list_time">2018.03-2018.05</p>
+                                <div class="exp-project_des"><ul>
+ <li><p>完成了Udacity的机器学习(进阶)在线课程,熟练掌握Python, C++编程.会使用一些常用的深度学习框架,如tensorflow, keras, caffe等等;<br />熟悉深度学习的常用模型,如ResNet, YOLO等等;</p></li>
+ <li><p>较深入的进行了caffe源码的阅读, 在ubuntu下使用eclipse进行调试.大体了解了整个框架的设计模式, 及该框架从main函数, 到Solver, Step函数及各个layer是如何相互调用的; 并将其一些经典之处应用在我上面设计的上位机软件flash-api中;</p></li>
+ <li><p>网易云课堂上完成了deeplearning.ai课程, 并独立完成了全部课程作业;</p></li>
+ <li><p>利用业余时间阅读了ian goodfellow的deeplearning等等; 观看了stanford的cs299, cs231n在线课程,并完成了部分作业;</p></li>
+ <li><p>还有一些其他课程,如MIT的S094: DeepLearining for self Driving Cars, 并且将apollo的replay demo rosbag在自己的机器上运行起来;</p></li>
+ <li><p>并在kaggle的Dogs vs. Cats竞赛中,使用迁移学习, 数据增强, 模型融合等技术,获得了第七名的成绩,logloss为0.03593, 详情可见如下网址我提交的论文.(https://github.com/mnlife/udacity-project);</p></li>
+</ul>
+<p><br /></p></div>
+                                <div class="exp-list_content">
+                                    使用迁移学习等,获得该项目leaderboard前十
+                                </div>
+                                <p class="exp-project_url">项目链接: https://github.com/mnlife/udacity-project</p>
+                            </li>
+                    </ol>
+                </div>
+            <!-- /项目经历 -->
+                <!-- 教育经历 -->
+                    <div class="mr-template edu-exp" id="eduExp">
+                        <div class="mr-template_title">
+                            <span>教育经历</span>
+                        </div>
+                        <ol class="edu-exp_group">
+                                <li class="edu-exp_list">
+                                    <p class="exp-list_time">2011-2015</p>
+                                    <div class="exp-list_top">
+                                        <img src="https://www.lgstatic.com/i/image/M00/AD/50/CgqKkVi1E6SANsFXAAAK3bEInFY24.jpeg" alt="学校Logo">
+                                        <div class="exp-list_right">
+                                            <strong>西安建筑科技大学</strong>
+                                            <p>本科 / 电气工程及其自动化</p>
+                                        </div>
+                                    </div>
+                                </li>
+                        </ol>
+                    </div>
+                <!-- /教育经历 -->
+
+            <!-- 社交主页 -->
+                <div class="mr-template social-page" id="socialPage">
+                    <div class="mr-template_title">
+                        <span>社交主页</span>
+                    </div>
+                    <ol class="social-page_group">
+                            <li class="social-page_list">
+                                <div class="social-page_content">
+                                    <img src="https://www.lgstatic.com/common/image/social/default@2x.png" alt="">
+                                    <p>http://mobile.twitter.com/_mnlife</p>
+                                </div>
+                            </li>
+                            <li class="social-page_list">
+                                <div class="social-page_content">
+                                    <img src="https://www.lgstatic.com/common/image/social/github@2x.png" alt="">
+                                    <p>https://github.com/mnlife</p>
+                                </div>
+                            </li>
+                    </ol>
+                </div>
+            <!-- /社交主页 -->
+
+            <!-- 图片作品 -->
+            <!-- /图片作品 -->
+        </div>
+    <script type="text/javascript" src="https://www.lagou.com/upload/oss.js"></script></body>
+
+</html>
